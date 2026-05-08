@@ -21,3 +21,22 @@ Más adelante, se me pedía que copiase mi llave pública al servidor, tarea que
 
 ## RDP: Escritorio en tu Navegador
 
+Una vez completado el mantenimiento desde terminal, se pedía que se realizasen una serie de tareas desde el navegador y el escritorio remoto. La primera de ellas era abrir el escritorio remoto y apuntar hacia localhost:3389, pero daba el siguiente error: 
+
+<img width="664" height="530" alt="image" src="https://github.com/user-attachments/assets/8881a2a5-2d40-46af-a96d-e12d5858116c" />
+
+La alternativa a esto era dirigirse desde el navegador a localhost:3000, que muestra un escritorio de Ubuntu gracias a Apache Guacamole. Dentro de este debíamos crear un archivo de texto llamado PRUEBA_LOGRADA.txt
+
+<img width="955" height="825" alt="image" src="https://github.com/user-attachments/assets/56d46de6-f467-49fd-890f-2f3d1a05bdae" />
+
+## MODIFICACIONES DE SSHD_CONFIG
+
+Por último, pedía hacer modificaciones dentro de sshd_config, para lo que había que poer lo siguiente en terminal: sudo nano sshd_config, tras lo que pedía la contraseña, que introduje igual que en los pasos anteriores. Tras ello, me devolvió el siguiente mensaje:
+
+<img width="508" height="261" alt="image" src="https://github.com/user-attachments/assets/12fc8a1b-f219-4e99-9c1e-69f8932a0f7a" />
+
+Esto significa que alumno no se encuentra dentro de los archivos sudoers
+
+## REFLEXIONES
+
+Durante la actividad, me he dado cuenta de que trabajar mediante SSH es más cómodo y sencillo, ya que permite las conexiones desde el anfitrión, dando facilidades como copiar y pegar o tener múltiples ventanas al mismo tiempo. Además, he descubierto la posibilidad de acceder a un escritorio remoto de Ubuntu a través del navegador

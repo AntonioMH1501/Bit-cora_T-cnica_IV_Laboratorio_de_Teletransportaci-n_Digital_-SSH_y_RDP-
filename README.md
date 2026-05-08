@@ -8,3 +8,16 @@ El primer paso era crear una carpeta en el escritorio, con el nombre SI_Bitácor
 
 En el primero de los pasos era abrir PowerShell y conectar a través del comando ssh alumno@localhost -p 2222. El primero de los probleas llegó cuando el mensaje que salió en terminal fue el siguiente: 
 <img width="770" height="336" alt="image" src="https://github.com/user-attachments/assets/a61e67a5-443c-4fb5-b36c-e0d436968817" />
+
+Para solucionar esto, había que cambiar la parte del comando de localhost por la IP de localhost, que es 127.0.0.1, tras esto, ya pedía ingresar la contraseña y me permitió conectar. 
+
+El siguiente paso era crear una llave, para lo que se usó el siguiente comando: ssh-keygen -t ed25519 -C "antoniomunoz.25@campuscamara.es", tras lo cuál me pidió un archivo para hacer copia, que dejé en blanco y me dió el certificado requerido:
+
+<img width="633" height="488" alt="image" src="https://github.com/user-attachments/assets/35aabfe7-8970-4f2f-87f4-6eb383ea02ab" />
+
+Más adelante, se me pedía que copiase mi llave pública al servidor, tarea que hice poniendo el siguiente comando: ssh-keygen -t ed25519 -C "tu_correo@ejemplo.com"
+
+<img width="641" height="303" alt="image" src="https://github.com/user-attachments/assets/36db74c8-e14d-4cec-b081-8e759aafa7cc" />
+
+## RDP: Escritorio en tu Navegador
+
